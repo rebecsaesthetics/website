@@ -35,16 +35,24 @@
     #desktoplinks img{
         float: left;
     }
-    .mapouter{
-        height:500px;
-        width:600px;
+    #location{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        gap: 25px;
+        justify-content: center;
     }
     .gmap_canvas {
         height:500px;
-        width:600px;
+        width:650px;
     }
     .content{
         margin: 15px 15px 0px 15px;
+    }
+    .c1{
+        display: table;
+        margin: auto;
     }
 }
 @media screen and (max-width: 625px) { /*if on a screen narrower than 625px (phones) */
@@ -92,6 +100,13 @@
     .content{
         margin: 10px 0px 0px 0px;
     }
+    .c1{
+        width: 100%;
+        text-align: center;
+    }
+    #location{
+        margin:0px 10px 0px 10px;
+    }
     
 }
 
@@ -99,6 +114,7 @@ h1{
     font-size: 36pt;
     text-align: center;
 }
+
 .mapouter{
     position:relative;
     text-align:right;
@@ -110,4 +126,5 @@ h1{
 #phone.p{
     display: inline;
 }
+
 /* CSS written by Alexander Stevenson */
