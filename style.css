@@ -1,33 +1,79 @@
 .topbar{
     background: #28007e;
     overflow: hidden;
-    color: white;
-    height: 57px;
     box-shadow: 10px 0px 5px gray;
+    position: relative;
 }
-
-.topbar a, .topbar p{
-    display: inline;
-    float: left;
-    text-align: center;
-    padding: 15px 15px;
-    text-decoration: none;
-    font-size: 18px;
-    margin-bottom: 0% !important;
+.topbar a{
     color: white;
-}
-.topbar a:hover{
-    background: white;
-    color: #28007e;
 }
 
 .topbar img{
     display: inline;
-    float: left;
     height: 57px;
 }
+@media screen and (min-width: 625px) { /*if on a screen wider than 625px (desktop/iPad) */
+    #desktoplinks{
+        height: 57px;
+    }
+    #desktoplinks a{
+        display: inline;
+        float: left;
+        text-align: center;
+        padding: 15px 15px;
+        text-decoration: none;
+        font-size: 18px;
+        margin-bottom: 0% !important;
+    }
+    #desktoplinks a:hover{
+        background: white;
+        color: #28007e;
+    }
+    #mobilebar, #mobilelinks{
+        display: none !important;
+    }
+    #desktoplinks img{
+        float: left;
+    }
+}
+@media screen and (max-width: 625px) { /*if on a screen narrower than 625px (phones) */
+    #desktoplinks{
+        display: none !important;
+    }
+    #mobilebar img{
+        float: right;
+    }
+    #mobilebar a {
+        background:#28007e;
+        display: block;
+        position: absolute;
+        padding: 13.5px 18px;
+        left: 0;
+        top: 0;
+        float: left;
+        opacity: 1 !important;
+    }
+    #mobilelinks {
+        display:none;
+        margin-top: 57px
+    }
+    #mobilelinks a{
+        color:white;
+        padding: 16px 14px;
+        text-decoration: none;
+        font-size: 18px;
+        display: block;
+        background: #18004d;
+    }
+    #mobilelinks a:hover{
+        background:white;
+        color: #18004d;
+    }
+    
+}
+
 .content{
-    margin: 5px 15px 0px 15px;
+    margin: 15px 15px 0px 15px;
 }
 
 h1{
