@@ -13,13 +13,27 @@
     </head>
     <body>
         <div class="topbar">
-            <img src="img/logo.png">
-            <a href="/">Home</a>
-            <a href="/treatments">Treatments</a>
-            <a href="/contact">Contact us</a>
+            <div id="desktoplinks">
+                <img src="img/logo.png">
+                <a href="/">Home</a>
+                <a href="/treatments">Treatments</a>
+                <a href="/contact">Contact us</a>
+            </div>
+            <div id="mobilebar">
+                <a id="menuicon" href="javascript:void(0);" class="icon" onclick="openMenu()"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                  </svg></a>
+                <img src="img/logo.png">
+            </div>
+            <div id="mobilelinks">
+                <a href="/">Home</a>
+                <a href="/treatments">Treatments</a>
+                <a href="/contact">Contact us</a>
+            </div>
         </div>
         <div class="content">
             <h1>Our treatments</h1>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
