@@ -26,3 +26,11 @@
     float: left;
     height: 57px;
 }
+.content{
+    margin: 5px 15px 0px 15px;
+}
+
+h1{
+    font-size: 36pt;
+    text-align: center;
+}
